@@ -26,7 +26,7 @@ function genericCurrency {
 }
 
 function cryptoCurrency {
-    curl -s  -X GET "https://min-api.cryptocompare.com/data/pricemulti?fsyms=${currency}&tsyms=BTC,USD,EUR" | jq
+    curl -s  -X GET "https://min-api.cryptocompare.com/data/pricemulti?fsyms=${currency}&tsyms=BTC,USD,EUR,GBP" | jq
 
     exit 0
 }
