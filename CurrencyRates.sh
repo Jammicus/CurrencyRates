@@ -11,9 +11,6 @@
 
 source userSettings.cfg
 
-echo $cryptoReturnedCurrencys
-
-
 jqAssert=`command -v jq`
 
 if [[ $jqAssert == "" ]]; then
