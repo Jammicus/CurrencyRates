@@ -2,14 +2,11 @@
 
 #************************************************#
 #               CurrencyRates.sh                 #
-#             written by James Walter            s#
+#             written by James Walter            #
 #               24,December 2017                 #
 #                                                #
-#              Gathers Curreny rates             #
+# Takes a currency and returns the exchange rate.#
 #************************************************#
-# Takes a currency and returns the exchange rate to it.
-# Uses JQ
-# https://stedolan.github.io/jq/ 
 
 jqAssert=`command -v jq`
 
