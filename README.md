@@ -16,6 +16,11 @@ To get the rates of a normal currency, use
 To get the rates of a crypto currency, use
 `crypto <currency>`
 
+To list all currency options from either the crypto or normal API, add the -L flag before the crypto or normal command.
+
+`-L crypto`
+`-L normal`
+
 In both cases, the currency should be the 3 letter  abbreviation of the currency. For example, British Pounds would be GBP
 
 ## Usersettings
@@ -30,6 +35,7 @@ cryptoReturnedCurrencys, which queries https://www.cryptocompare.com/
 By default quote curries are GBP and USD
 
 Please remember that two different APIs are used. If you try and pass the BTC/Bitcoin to the normal currency API, you will get errors. 
+
 
 ## APIs used.
 
