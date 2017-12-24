@@ -19,7 +19,20 @@ To get the rates of a crypto currency, use
 
 In both cases, the currency should be the 3 letter  abbreviation of the currency. For example, British Pounds would be GBP
 
+## Usersettings
+
+In the userSettings.cfg file, you can specify the quote currencies you want returned when you query a base currency. Each variable takes a comma seperated list.
+
+ The two fields provided are:
+
+normalReturnedCurrencys, which queries http://fixer.io/
+cryptoReturnedCurrencys, which queries https://www.cryptocompare.com/
+
+By default quote curries are GBP and USD
+
+Please remember that two different APIs are used. If you try and pass the BTC/Bitcoin to the normal currency API, you will get errors. 
+
 ## APIs used.
 
 * https://min-api.cryptocompare.com
-* https://api.fixer.io
+* http://fixer.io/
