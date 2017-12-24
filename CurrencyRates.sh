@@ -8,7 +8,6 @@
 # Takes a currency and returns the exchange rate.#
 #************************************************#
 
-
 source userSettings.cfg
 
 jqAssert=`command -v jq`
@@ -19,14 +18,13 @@ if [[ $jqAssert == "" ]]; then
 fi
 
 function genericCurrency {
-
     curl -s -X GET "https://api.fixer.io/latest?base=${currency}&symbols=${normalReturnedCurrencys}" | jq 
 
     exit 0
 }
 
 function cryptoCurrency {
-    curl -s  -X GET "https://min-api.cryptocompare.com/data/pricemulti?fsyms=${currency}&tsyms=${cryptoReturnedCurrencys}" | jq
+    curl -s -X GET "https://min-api.cryptocompare.com/data/pricemulti?fsyms=${currency}&tsyms=${cryptoReturnedCurrencys}" | jq
 
     exit 0
 }
@@ -43,4 +41,3 @@ else
     echo "bad input, please use crypto <currency> or normal <currency>"        
     exit 1
 fi
-

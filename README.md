@@ -9,7 +9,6 @@ If you do not have JQ, you can get it here: https://stedolan.github.io/jq/
 
 You also need internet access so we can poll the desired API to get the rates.
 
-
 ## Usage
 
 To get the rates of a normal currency, use 
